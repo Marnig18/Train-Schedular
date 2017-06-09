@@ -5,23 +5,27 @@
 		<!-- Latest compiled and minified CSS -->
 	  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
   <!-- Bootstrap CDN-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<!-- Moment References -->
-  <script>"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"</script>
-		
+<!-- Moment Reference -->
+   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 	</head>
 	<body>
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Train Schedular</h1>
+	<div class="container" >
+		<div class="jumbotron" id="panel">
+			
+				<h1>Train Scheduler</h1>
 			</div>
 		</div>
+		<div class="container" >
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">Train Schedule</h3>
@@ -42,6 +46,8 @@
 				</table>
 			</div>
 		</div>
+		</div>
+		<div class="container">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">Add Train</h3>
@@ -67,6 +73,7 @@
 					<button type="submit" class="btn btn-default" id="submit">Submit</button>
 				</form>
 			</div>
+		</div>
 		</div>
 		<script src="assets/javascript/logic.js"></script>
 	</body>
